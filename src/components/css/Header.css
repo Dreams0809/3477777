@@ -1,0 +1,43 @@
+/* Header container */
+.header {
+  background-color: #111;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Flex container for nav */
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left and right side link containers */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Center title */
+.nav-center {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Anchor styles */
+.nav-left a,
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #888;
+}

@@ -1,0 +1,56 @@
+.body-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.body-container > div {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.latest-episode,
+.cities-traveled {
+  flex: 1; /* each section takes equal width */
+  /* optional: add some padding or border */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.cities-traveled ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cities-traveled li {
+  margin-bottom: 10px;
+}
+
+.city-link {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.city-link:hover {
+  text-decoration: underline;
+}
+
+.latest-episode,
+.cities-traveled {
+  flex: 1; /* equal widths */
+  margin: 0; /* remove any vertical margins */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
