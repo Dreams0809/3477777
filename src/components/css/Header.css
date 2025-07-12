@@ -1,8 +1,13 @@
 /* Header container */
 .header {
-  background-color: #111;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #9a0102;
+  font-weight: 300;
   color: white;
   padding: 1rem 0;
+  border-radius: 1rem; /* 👈 Rounded edges */
+  margin: 1rem; /* Optional: adds spacing around the header */
+
 }
 
 /* Flex container for nav */

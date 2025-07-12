@@ -18,28 +18,28 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaSpotify />
+           Spotify
           </a>
           <a
             href="https://podcasts.apple.com/us/podcast/347podcast/id1625572254"
             target="_blank"
             rel="noreferrer"
           >
-            <FaPodcast />
+            Apple Podcast
           </a>
           <a
             href="https://www.instagram.com/347pod"
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram />
+            Instagram
           </a>
           <a
             href="https://www.youtube.com/@347pod"
             target="_blank"
             rel="noreferrer"
           >
-            <FaYoutube />
+            Youtube
           </a>
         </div>
       </div>
