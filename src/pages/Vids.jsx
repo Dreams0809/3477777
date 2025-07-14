@@ -1,5 +1,26 @@
 import React from "react";
 
 export default function Vids() {
-  return <h1>Welcome to Home</h1>;
+  return (
+    <div>
+      <div className="vids-container">
+
+
+      </div>
+
+
+      <div className="latest-vids">
+        <h1> LATEST VIDEOS</h1>
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+  )
+  
 }
