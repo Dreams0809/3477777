@@ -1,23 +1,12 @@
 import React from "react";
+imnport YouTubeRotatorLatestVids from ./YouTubeRotatorLatestVids.jsx
 
 export default function Vids() {
   return (
     <div>
-      <div className="vids-container">
+      <h1> LATEST VIDEOS</h1>
 
-
-      </div>
-
-
-      <div className="latest-vids">
-        <h1> LATEST VIDEOS</h1>
-
-
-
-      </div>
-
-
-
+      
 
     </div>
 
