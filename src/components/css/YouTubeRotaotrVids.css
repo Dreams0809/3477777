@@ -1,13 +1,14 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+.video-row {
+  display: flex;
+  flex-wrap: nowrap;
   gap: 1rem;
   padding: 2rem;
   background-color: #000;
-  justify-items: center;
+  overflow-x: auto;
 }
 
 .video-box {
+  flex: 0 0 auto;
   width: 150px;
   height: 150px;
   border-radius: 12px;
