@@ -14,6 +14,7 @@ import Vids from "./pages/Vids.jsx";
 import Vlogs from "./pages/Vlogs.jsx";
 import Signup from "./pages/Signup.jsx"; // ✅ Import Signin page
 import Login from "./pages/Login.jsx";
+import Pods from "./pages/Pods.jsx";
 
 
 
