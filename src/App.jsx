@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import components
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import Body from "./components/Body.jsx"; // ✅ Only import once!
+import Body from "./components/Home.jsx"; // ✅ Only import once!
 
 // Import pages
 import Blogs from "./pages/Blogs.jsx";  // ✅ PLURAL
