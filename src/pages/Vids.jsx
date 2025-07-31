@@ -1,5 +1,6 @@
 import React from "react";
-imnport YouTubeRotatorLatestVids from ./YouTubeRotatorLatestVids.jsx
+imnport YouTubeRotatorVids from ./components/YouTubeRotatorLatestVids.jsx
+import YouTubeRotatorVids.css from ./components/css/YouTubeRotatorLatestVids.css
 
 export default function Vids() {
   return (
