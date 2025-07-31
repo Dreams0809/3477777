@@ -1,5 +1,6 @@
 import React from "react";
 import '.components/css/SubscribeDropdown.css';
+import '.components/css/pages/Pods.css';
 
 export default function Pods() {
   return(
