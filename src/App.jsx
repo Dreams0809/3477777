@@ -30,6 +30,7 @@ export default function App() {
         <Route path="/vlogs" element={<Vlogs />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pods" element={<Pods />} />
       </Routes>
       
       <Footer />
