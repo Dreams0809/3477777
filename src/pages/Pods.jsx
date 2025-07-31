@@ -29,6 +29,9 @@ export default function Pods() {
             <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a>
           </div>
         </div>
-      </div>
+
+          <div> 
+            <h1> ALL PODCAST EPSIODES</h1>
+          </div>
     </div>  
 };
