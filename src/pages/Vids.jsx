@@ -10,12 +10,16 @@ export default function Vids() {
       <YouTubeRotatorVids />
 
       <h1> 347 Moments</h1>
+      <PlaylistsSection />
 
       <h1> fRiENDS 000 </h1>
+      <PlaylistsSection />
 
       <h1> 347 Pod </h1>
+      <PlaylistsSection />
 
       <h1> 347 BTS </h1>
+      <PlaylistsSection />
 
       
 
