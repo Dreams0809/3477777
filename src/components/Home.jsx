@@ -7,11 +7,7 @@ export default function Home() {
   return (
     <div className="body-container">
 
-      <div className="container">
-      
-     
-        
-      </div>
+      <YouTubeRotator />
 
     </div>
   );
