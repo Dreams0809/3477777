@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import './css/YouTubeRotator.css'; // Link to external CSS file
+import './css/YouTubeGrid.css'; // Link to external CSS file
 
 const YouTubeRotator = () => {
   const playerRef = useRef(null);
