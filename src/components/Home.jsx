@@ -6,6 +6,7 @@ export default function Home() {
 
   return (
     <div className="body-container">
+      <h1> Yeeerr Whats Good My Hearts <3 </h1>
 
       <YouTubeRotator />
 
