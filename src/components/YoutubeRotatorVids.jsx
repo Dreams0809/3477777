@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/YouTubeRotatorVids.css';
+import './css/YouTubeGrid.css';
 
 const API_KEY = 'AIzaSyC7LgT30FoVySYKggZ0LKpYaNjMBNlGsZk'; // Replace with your actual API key
 const CHANNEL_ID = 'UCly7IKQY4sH4WnTPVAJqj_A'; // Replace with your channel ID
