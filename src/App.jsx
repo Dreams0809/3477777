@@ -23,7 +23,7 @@ export default function App() {
       <Header />
 
       <Routes>
-        <Route path="/" ensureAuth element={<Body />} />
+        <Route path="/" ensureAuth element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/vids" element={<Vids />} />
         <Route path="/vlogs" element={<Vlogs />} />
