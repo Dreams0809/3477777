@@ -9,6 +9,8 @@ export default function Header() {
         <div className="nav-left">
           <Link to="/vids">VIDS</Link>
           <Link to="/vlogs">VLOGS</Link>
+          <Link to="/vlogs">PODS</Link>
+          
           
         </div>
  
