@@ -7,9 +7,9 @@ const YouTubeRotator = () => {
 
   // Replace these with your actual video IDs
   const videoIds = [
-    'dQw4w9WgXcQ',
-    '3JZ_D3ELwOQ',
-    'M7lc1UVf-VE'
+    'RzgbAwk2nwY',
+    'wcP7JLL8GGc',
+    'lJHRTVuuemM'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
