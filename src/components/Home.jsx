@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Body/Latest.css"; // styles for latest episode section
-import "./css/Body/Body.css";
-export default function Body() {
+import "./css/Body/Home.css";
+export default function Home() {
 
 
   return (
