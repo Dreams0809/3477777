@@ -1,0 +1,32 @@
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  max-width: 600px;
+  color: #fff;
+}
+
+.intro-text h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
