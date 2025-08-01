@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .youtube-grid-container {
   display: flex;
   overflow-x: auto;
@@ -28,3 +29,35 @@
   margin-top: 0.5rem;
   color: #111;
 }
+=======
+.video-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  background-color: #000;
+}
+
+.video-box {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(255, 0, 0, 0.5);
+}
+>>>>>>> cc9a2832785a114e1e4761f13ff4bf7b19c078e8

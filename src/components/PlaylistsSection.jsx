@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from 'react';
+<<<<<<< HEAD
 // import './YouTubeGrid.css';
+=======
+import './YouTubeGrid.css';
+>>>>>>> cc9a2832785a114e1e4761f13ff4bf7b19c078e8
 
 const KEYWORDS = [
   { key: '347 Moments', title: '347 Moments' },
   { key: 'Behind The Scenes', title: 'Behind The Scenes' },
   { key: '347 Pod', title: '347 Pod' },
   { key: 'Vlogs', title: ' 347 Vlogs' }
+<<<<<<< HEAD
 ]
   
 export default function PlaylistSection (){
+=======
+
+  
+  export default function PlaylistSection (){
+>>>>>>> cc9a2832785a114e1e4761f13ff4bf7b19c078e8
 
   const [playlistMap, setPlaylistMap] = useState({});
   const [videosMap, setVideosMap] = useState({});
@@ -86,3 +96,7 @@ export default function PlaylistSection (){
   );
 };
   
+<<<<<<< HEAD
+=======
+  }
+>>>>>>> cc9a2832785a114e1e4761f13ff4bf7b19c078e8
