@@ -1,5 +1,19 @@
 import React from "react";
 
 export default function Vlogs() {
-  return <h1>Welcome to Vlogs</h1>;
+  return(
+
+    <div>
+      <h1>Welcome to fRiENDS VLOGS </h1>
+        <p> Vlogs and vibes, friends who are family </p>
+
+      
+    </div>  
+
+      
+
+
+
+
+  ) 
 }

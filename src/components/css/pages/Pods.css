@@ -1,36 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
 .intro-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  flex-wrap: wrap;
+  background-color: #0d0d0d;
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
 }
 
-.intro-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  flex-shrink: 0;
+.intro-section img.intro-image {
+  max-width: 180px;
+  margin-bottom: 1rem;
 }
 
-.intro-text {
-  max-width: 600px;
-  color: #fff;
+.intro-section .intro-text h1 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
 }
 
-.intro-text h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-}
-
-.intro-text p {
+.intro-section .intro-text p {
   font-size: 1rem;
   line-height: 1.6;
-<<<<<<< HEAD
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
 }
-=======
+
+/* Subscribe dropdown (basic) */
+.subscribe-dropdown {
+  margin: 1.5rem auto;
+  text-align: center;
 }
->>>>>>> cc9a2832785a114e1e4761f13ff4bf7b19c078e8
+
+.subscribe-btn {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Podcast Episodes Section */
+h1 {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.episode-list {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.video-card {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img.thumbnail {
+  width: 120px;
+  height: 70px;
+  border-radius: 4px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.video-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #111;
+  margin: 0;
+}
+
+.video-card a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.video-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.play-button {
+  width: 24px;
+  height: 24px;
+  background-color: #e50914;
+  border-radius: 50%;
+  margin-left: auto;
+}

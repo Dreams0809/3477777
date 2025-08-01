@@ -4,14 +4,19 @@ import './css/YouTubeGrid.css';
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY; // hide this in .env
 const CHANNEL_ID = 'UCly7IKQY4sH4WnTPVAJqj_A'; // Replace this with your channel ID
 
+
+
 export default function YouTubeGrid() {
+  
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
+    console.log('API_KEY:', API_KEY);
+    console.log('CHANNEL_ID:', CHANNEL_ID);
     const fetchVideos = async () => {
       try {
         const res = await fetch(
-          `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50`
+            `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50`
         );
         const data = await res.json();
         const videoItems = data.items.filter(item => item.id.kind === 'youtube#video');
@@ -40,4 +45,5 @@ export default function YouTubeGrid() {
       ))}
     </div>
   );
+  
 }
