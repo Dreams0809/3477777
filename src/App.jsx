@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import components
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import Body from "./components/Body.jsx"; // ✅ Only import once!
+import Home from "./components/Home.jsx"; // ✅ Only import once!
 
 // Import pages
 import Blogs from "./pages/Blogs.jsx";  // ✅ PLURAL
@@ -14,6 +14,7 @@ import Vids from "./pages/Vids.jsx";
 import Vlogs from "./pages/Vlogs.jsx";
 import Signup from "./pages/Signup.jsx"; // ✅ Import Signin page
 import Login from "./pages/Login.jsx";
+import Pods from "./pages/Pods.jsx";
 
 
 
@@ -23,12 +24,13 @@ export default function App() {
       <Header />
 
       <Routes>
-        <Route path="/" ensureAuth element={<Body />} />
+        <Route path="/" ensureAuth element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/vids" element={<Vids />} />
         <Route path="/vlogs" element={<Vlogs />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pods" element={<Pods />} />
       </Routes>
       
       <Footer />
