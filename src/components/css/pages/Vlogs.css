@@ -1,0 +1,58 @@
+/* Blue intro section */
+.vlogs-section {
+  background-color: #B0E0E6;
+  padding: 60px 20px;
+}
+
+.vlogs-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+.vlogs-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.vlogs-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Grid section outside blue */
+.vlog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 30px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.vlog-card {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.vlog-card:hover {
+  transform: scale(1.05);
+}
+
+.vlog-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  border: none; /* Removes any outline or border */
+}

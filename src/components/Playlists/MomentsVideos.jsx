@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../css/YouTubeGrid.css'; // Adjust if needed
+import '../css/YouTubeGrid.css'; // Reuse shared styles
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
-const PLAYLIST_ID = 'PLTuK-Smxm50CwPNfqyn9CWUhgOH7uberh'; // ← Replace this!
+const PLAYLIST_ID = 'PLTuK-Smxm50CwPNfqyn9CWUhgOH7uberh'; // 347 Moments playlist ID
 
 export default function MomentsVideos() {
   const [videos, setVideos] = useState([]);
@@ -15,7 +15,6 @@ export default function MomentsVideos() {
         );
         if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
         const data = await res.json();
-        console.log('347 Moments playlist response:', data);
         setVideos(data.items);
       } catch (err) {
         console.error('Failed to fetch 347 Moments playlist videos:', err);
@@ -26,29 +25,42 @@ export default function MomentsVideos() {
   }, []);
 
   return (
-    <div className="youtube-grid-container">
-      {videos.map((video) => {
-        const snippet = video.snippet;
-        const videoId = snippet.resourceId?.videoId;
-        if (!videoId) return null;
+    <div className="youtube-section">
+      <div className="youtube-header">
+        <h2>347 MOMENTS</h2>
+        <a
+          href={`https://www.youtube.com/playlist?list=${PLAYLIST_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See All
+        </a>
+      </div>
 
-        return (
-          <div key={videoId} className="video-card">
-            <a
-              href={`https://www.youtube.com/watch?v=${videoId}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={snippet.thumbnails.medium.url}
-                alt={snippet.title}
-                className="thumbnail"
-              />
-              <p className="video-title">{snippet.title}</p>
-            </a>
-          </div>
-        );
-      })}
+      <div className="youtube-carousel">
+        {videos.map((video) => {
+          const snippet = video.snippet;
+          const videoId = snippet.resourceId?.videoId;
+          if (!videoId) return null;
+
+          return (
+            <div key={videoId} className="video-card">
+              <a
+                href={`https://www.youtube.com/watch?v=${videoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={snippet.thumbnails.medium.url}
+                  alt={snippet.title}
+                  className="thumbnail"
+                />
+                <p className="video-title">{snippet.title}</p>
+              </a>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

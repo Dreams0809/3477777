@@ -1,30 +1,51 @@
-.youtube-grid-container {
+.youtube-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto; /* centers the section horizontally */
+}
+
+.youtube-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.youtube-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.youtube-header a {
+  font-size: 14px;
+  color: #0073ff;
+  text-decoration: none;
+}
+
+.youtube-carousel {
   display: flex;
   overflow-x: auto;
-  padding: 1rem;
-  gap: 1rem;
-  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
 }
 
 .video-card {
-  min-width: 250px;
-  flex-shrink: 0;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  scroll-snap-align: start;
-  text-align: center;
-  padding: 0.5rem;
+  flex: 0 0 auto;
+  width: 280px;
+  text-decoration: none;
+  color: black;
 }
 
 .thumbnail {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .video-title {
+  margin-top: 8px;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 0.5rem;
-  color: #111;
+  line-height: 1.3;
 }

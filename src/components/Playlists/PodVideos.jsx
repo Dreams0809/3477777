@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../css/YouTubeGrid.css'; // reuse your existing styles
+import '../css/YouTubeGrid.css'; // Reuse carousel styles
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
-const PLAYLIST_ID = 'PLTuK-Smxm50BubWRFzEDpDqtw--nFk6Ar'; // Replace with 347Pod playlist ID
+const PLAYLIST_ID = 'PLTuK-Smxm50BubWRFzEDpDqtw--nFk6Ar'; // 347Pod playlist ID
 
 export default function PodVideos() {
   const [videos, setVideos] = useState([]);
@@ -15,7 +15,6 @@ export default function PodVideos() {
         );
         if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
         const data = await res.json();
-        console.log('Playlist response:', data);
         setVideos(data.items);
       } catch (err) {
         console.error('Failed to fetch playlist videos:', err);
@@ -26,26 +25,42 @@ export default function PodVideos() {
   }, []);
 
   return (
-    <div className="youtube-grid-container">
-      {videos.map(video => {
-        const snippet = video.snippet;
-        const videoId = snippet.resourceId?.videoId;
+    <div className="youtube-section">
+      <div className="youtube-header">
+        <h2>LATEST PODCASTS</h2>
+        <a
+          href={`https://www.youtube.com/playlist?list=${PLAYLIST_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See All
+        </a>
+      </div>
 
-        if (!videoId) return null;
+      <div className="youtube-carousel">
+        {videos.map((video) => {
+          const snippet = video.snippet;
+          const videoId = snippet.resourceId?.videoId;
+          if (!videoId) return null;
 
-        return (
-          <div key={videoId} className="video-card">
-            <a href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank" rel="noopener noreferrer">
-              <img
-                src={snippet.thumbnails.medium.url}
-                alt={snippet.title}
-                className="thumbnail"
-              />
-              <p className="video-title">{snippet.title}</p>
-            </a>
-          </div>
-        );
-      })}
+          return (
+            <div key={videoId} className="video-card">
+              <a
+                href={`https://www.youtube.com/watch?v=${videoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={snippet.thumbnails.medium.url}
+                  alt={snippet.title}
+                  className="thumbnail"
+                />
+                <p className="video-title">{snippet.title}</p>
+              </a>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

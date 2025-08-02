@@ -4,10 +4,15 @@ import PodVideos from "../components/Playlists/PodVideos.jsx";
 import FriendsVideos from "../components/Playlists/FriendsVideos.jsx";
 import MomentsVideos from "../components/Playlists/MomentsVideos.jsx";
 import BTSVideos from "../components/Playlists/BTSVideos.jsx";
+import LatestVideoSection from "../components/LatestVideoSection.jsx";
 
 export default function Vids() {
   return (
     <div>
+
+
+      <LatestVideoSection />
+
       <h1> LATEST VIDEOS</h1>
       <YouTubeGrid />
 
