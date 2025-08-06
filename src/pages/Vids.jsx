@@ -19,7 +19,7 @@ export default function Vids() {
       <h1> Pod </h1>
       <PodVideos/>
 
-      <h1> fRiENDS</h1>
+      <h1> fRiENDS 000</h1>
       <FriendsVideos />
 
       <h1>347 Moments</h1>

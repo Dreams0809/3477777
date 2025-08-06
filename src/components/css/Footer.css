@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
 .footer-left {
@@ -29,6 +30,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .follow-text {
@@ -38,12 +40,23 @@
   margin-right: 8px;
 }
 
+/* Each link with icon */
 .footer-right a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between icon and text */
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 16px;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
-.footer-right a:hover {
-  color: #888;
+.footer-right svg {
+  font-size: 18px;
+  color: #B0E0E6; /* Default: powder blue */
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-right a:hover svg {
+  color: #9a0102; /* Red on hover */
 }
