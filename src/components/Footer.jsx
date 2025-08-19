@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="footer-container">
         {/* Left - Logo / Brand */}
         <div className="footer-left">
-          <div className="footer-logo">347</div>
+          <div className="footer-logo">347 MEDIA</div>
         </div>
 
         {/* Right - Follow us + Icons */}

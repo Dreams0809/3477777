@@ -53,7 +53,6 @@ app.get('/protected', ensureAuth, (req, res) => {
 
 // Routes
 app.use('/', mainRoutes)
-// app.use('/pokemon', pokemonRoutes)
 
 
 

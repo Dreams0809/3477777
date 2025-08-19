@@ -1,8 +1,6 @@
-﻿import express from 'express';
-import { getIndex } from '../controllers/home.js';
+﻿import express from 'express';      
+// const { ensureAuth, ensureGuest } = require("../middleware/auth");
+const postsController = require("../controllers/post");
 
-const router = express.Router();
 
-router.get('/', getIndex);
-
-export default router;
+router.get("/profile", postsController.getProfile);

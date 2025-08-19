@@ -1,6 +1,6 @@
 ﻿const mongoose = require('mongoose')
 
-const People = new mongoose.Schema({
+const Profile = new mongoose.Schema({
     userId:{
         type: String,
         required: true

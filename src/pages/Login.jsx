@@ -15,7 +15,7 @@ export default function bLogin() {
                     <input type="text" placeholder="Username" required />
                     <input type="email" placeholder="Email" required />
                     <input type="password" placeholder="Password" required />
-                    <button type="submit">Sign Up</button>
+                    <input type="submit" id="submit">Sign Up</input>
                 </form>   
             </div>
 
